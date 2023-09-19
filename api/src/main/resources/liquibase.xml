@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                  http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+    <changeSet id="redactedextraction_app" author="Tobechi Nnakwe">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM appframework_user_app WHERE app_id='redactedextraction';
+            </sqlCheck>
+        </preConditions>
+        <sql>
+            <![CDATA[
+        	SET FOREIGN_KEY_CHECKS = 0;
+    		REPLACE INTO `appframework_user_app` (`app_id`, `json`) VALUES ('redactedextraction', '{\r\n    \"id\": \"redactedextraction\",\r\n    \"description\": \"Extraction plugin for Redacted patients and visits\",\r\n    \"order\": 0,\r\n    \"extensions\": [\r\n        {\r\n            \"id\": \"demoapp.homepageLink\",\r\n            \"extensionPointId\": \"org.openmrs.referenceapplication.homepageLink\",\r\n            \"type\": \"link\",\r\n            \"label\": \"Redacted Extraction\",\r\n            \"url\": \"redactedextraction/redactedextractionHome.page\",\r\n            \"icon\": \"icon-refresh \",\r\n            \"requiredPrivilege\": \"Task: coreapps.createVisit\"\r\n        }\r\n    ]\r\n}');
+    		SET FOREIGN_KEY_CHECKS = 1;
+       	    ]]>
+        </sql>
+    </changeSet>
+ 
+</databaseChangeLog>

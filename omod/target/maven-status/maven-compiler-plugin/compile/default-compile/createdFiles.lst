@@ -1,0 +1,17 @@
+org\openmrs\module\redactedextraction\Utils\ZipUtil.class
+org\openmrs\module\redactedextraction\db\NdrDBManager.class
+org\openmrs\module\redactedextraction\model\ndr\MessageSendingOrganisationType.class
+org\openmrs\module\redactedextraction\Utils\LoggerUtils.class
+org\openmrs\module\redactedextraction\model\Validator.class
+org\openmrs\module\redactedextraction\fragment\controller\RedactedextractionHomeFragmentController.class
+org\openmrs\module\redactedextraction\model\ndr\RedactedVisitType.class
+org\openmrs\module\redactedextraction\model\ndr\Container.class
+org\openmrs\module\redactedextraction\model\ndr\PatientDemographicsType.class
+org\openmrs\module\redactedextraction\model\ndr\MessageHeaderType.class
+org\openmrs\module\redactedextraction\extension\html\AdminList.class
+org\openmrs\module\redactedextraction\web\controller\RedactedextractionController.class
+org\openmrs\module\redactedextraction\Utils\LoggerUtils$LogFormat.class
+org\openmrs\module\redactedextraction\Utils\LoggerUtils$LogLevel.class
+org\openmrs\module\redactedextraction\Utils\Utils.class
+org\openmrs\module\redactedextraction\model\DBConnection.class
+org\openmrs\module\redactedextraction\model\ndr\ObjectFactory.class

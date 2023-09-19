@@ -1,0 +1,6 @@
+org\openmrs\module\redactedextraction\RedactedextractionConfig.class
+org\openmrs\module\redactedextraction\api\RedactedextractionService.class
+org\openmrs\module\redactedextraction\RedactedextractionActivator.class
+org\openmrs\module\redactedextraction\api\impl\RedactedextractionServiceImpl.class
+org\openmrs\module\redactedextraction\api\dao\RedactedextractionDao.class
+org\openmrs\module\redactedextraction\Item.class
